@@ -7,12 +7,15 @@ import About from './components/About.jsx'
 import Portfolio from './components/Portfolio.jsx'
 import Resume from './components/Resume.jsx'
 
+import Navbar from './components/Navbar.jsx'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        {/* <Navbar /> */}
         <Routes>
           <Route path='/' element={<Landing />}></Route>
           <Route path='/styles' element={<Styles />}></Route>
