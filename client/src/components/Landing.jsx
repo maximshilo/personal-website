@@ -24,12 +24,12 @@ export default function Landing(props) {
 
                     <div className='row'>
                         <span className='secondaryHeading'>
-                            React : Express : Node : Mongoose
+                            React | Express | Node | Mongoose
                         </span>
                     </div>
 
                     <div className='row'>
-                        <Navbar />
+                        <Navbar landing={true} />
                     </div>
 
                     <div className='row'>

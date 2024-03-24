@@ -14,10 +14,12 @@ button {
   align-items: flex-start;
 
   position: relative;
+  color: #00002d;
 
   min-height: 100vh;
 
-  background: #FDFDFD; /* off white */ 
+  /* background: #FDFDFD; off white  */
+  background: linear-gradient(to bottom right, rgb(252, 252, 253), rgb(245, 250, 255));
 }
 
 
@@ -28,18 +30,25 @@ button {
   align-self: stretch;
 }
 
-.Landing {
+.Landing,
+.About,
+.Portfolio,
+.Resume {
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: stretch;
-  justify-content: center;
-  
+  justify-content: flex-start;
+
   /* margin-top: -2vh; */
   /* margin-bottom: -2vh; */
   /* width: calc(1280px - 2vw); */
   min-height: 100vh;
   /* background: #000080; */
+}
+
+.Landing {
+  justify-content: center;
 }
 
 .sectionHeaderContainer {
@@ -146,7 +155,7 @@ button {
 .con {
   max-width: 1268px;
   min-width: 348px;
-  width: 96vw;
+  width: 50vw;
 }
 
 .row {
@@ -178,7 +187,7 @@ button {
 .mainHeading {
   font-size: 32px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+  margin: 6px 0;
   justify-self: stretch;
   text-align: center;
 }
@@ -187,6 +196,7 @@ button {
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  margin: 6px 0;
   font-weight: bold;
 }
 
@@ -202,9 +212,10 @@ button {
   border: none;
   padding: 12px 9px;
   border-radius: 6px;
-
-  box-shadow: 0 4px 0 gray;
-
+  color: black;
+  box-shadow: 0 4px 0 rgb(50, 50, 100);
+  background: white;
+  border: 0.5px solid black;
   transition: 75ms;
 }
 
@@ -212,10 +223,20 @@ button {
 .landingButton:hover {
   margin-top: 26px;
   margin-bottom: 22px;
-  box-shadow: 0 2px 0 gray;
+  box-shadow: 0 2px 0 rgb(50, 50, 100);
 }
+
 .landingButton:active {
   margin-top: 28px;
   margin-bottom: 20px;
-  box-shadow: 0 0 0 gray;
+  box-shadow: 0 0 0 rgb(50, 50, 100);
+}
+
+iframe {
+  max-width: 1268px;
+  min-width: 348px;
+  width: 50vw;
+  height: 100vh;
+  margin-bottom: 24px;
+  border: none;
 }
