@@ -153,7 +153,7 @@ export default function About(props) {
 
                     <div className='row'>
                         <span className='mainHeading'>
-                            Technical Skills
+                            Contact Info
                         </span>
                     </div>
 
