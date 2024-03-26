@@ -6,6 +6,12 @@ export default function Navbar (props) {
     const displayLandingButton = () => {
         if (!props.landing) {
             return <button onClick={() => { navigate('/')}} className='landingButton'>Home</button>
+        } else {
+            let innerHTML = 'Contact'
+            let callback = () => {
+                props.contact.setFlag(!props.contact.flag)
+            }
+            return <button onClick={callback} className='landingButton'>{innerHTML}</button>
         }
     }
     return (

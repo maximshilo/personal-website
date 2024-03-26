@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import Navbar from './Navbar.jsx'
 
 export default function Resume(props) {
@@ -14,7 +15,7 @@ export default function Resume(props) {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    };
+    }
 
     return (
         <div className='Resume'>

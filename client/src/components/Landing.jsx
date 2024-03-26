@@ -1,11 +1,23 @@
 import React from 'react'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import Navbar from './Navbar.jsx'
+import Contact from './Contact.jsx'
 
 export default function Landing(props) {
     const navigate = useNavigate()
+    const [flag, setFlag] = useState(false)
 
+    const displayContact = () => {
+        if (flag) {
+            return (
+                <div className='row'>
+                    <Contact />
+                </div>
+            )
+        }
+    }
     return (
         <div className='Landing'>
             <div className='con'>
@@ -29,7 +41,7 @@ export default function Landing(props) {
                     </div>
 
                     <div className='row'>
-                        <Navbar landing={true} />
+                        <Navbar landing={true} contact={{flag, setFlag}} />
                     </div>
 
                     <div className='row'>
@@ -44,6 +56,7 @@ export default function Landing(props) {
                 </div>
             </div>
 
+            { displayContact() }
             {/* <div className='container'>
                 <div className='linkDivsGroup'>
                     <div onClick={() => { navigate('/about') }} className='linkDiv'>About me</div>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Navbar from './Navbar.jsx'
+import Contact from './Contact.jsx'
 
 export default function About(props) {
     const skills = [
@@ -10,6 +11,11 @@ export default function About(props) {
         ['Tools', 'Git', 'Heroku'],
         ['Languages', 'JavaScript', 'C#', 'Python'],
     ]
+
+    const continousLearning = {
+        current: [`'Learn Vue.js' course @ Codecademy`],
+        completed: [`'Learn Python 3' course @ Codecademy`]
+    }
 
     const education = [
         ['B.Sc in Computer Science', '2024 - expected 2026', 'Bar Ilan University, Ramat Gan, Israel.'],
@@ -26,6 +32,7 @@ export default function About(props) {
     My passion for technology is matched only by my natural affinity for coding and algorithms. I thrive on the challenge of solving complex problems and the joy of bringing innovative ideas to life through meticulous coding and creative design. This blend of artistic expression and intellectual rigor is what makes full stack development not just my career, but my calling.
     
     I invite you to explore my portfolio, where each project showcases my dedication to crafting seamless, engaging digital experiences. Let's connect and create something extraordinary together.`
+
     const displaySkills = () => {
         return (
             <div className='skills'>
@@ -51,6 +58,27 @@ export default function About(props) {
                     })
                 }
             </div>
+        )
+    }
+
+    const displayContinousLearning = () => {
+        return (
+                <div className='col'>
+                    <div className='skills'>
+                        <div className='sectionTitle'>Current</div>
+                        <ul>
+                            {continousLearning.current.map(el => <li>{el}</li>)}
+                        </ul>
+                        <div className='sectionTitle'>
+                            <span>Completed - Total of {continousLearning.completed.length} courses.</span>
+                        </div>
+                        <div className='scrollable'>
+                            <ul>
+                                {continousLearning.completed.map(el => <li>{el}</li>)}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         )
     }
 
@@ -130,6 +158,16 @@ export default function About(props) {
                     </div>
 
                     <div className='row'>
+                        <Contact />
+                    </div>
+
+                    <div className='row'>
+                        <span className='mainHeading'>
+                            Technical Skills
+                        </span>
+                    </div>
+
+                    <div className='row'>
                         {displaySkills()}
                     </div>
 
@@ -141,6 +179,10 @@ export default function About(props) {
 
                     <div className='row'>
                         {displayEducation()}
+                    </div>
+
+                    <div className='row'>
+                        {displayContinousLearning()}
                     </div>
 
                     <div className='row'>
