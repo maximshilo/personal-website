@@ -164,6 +164,7 @@ button {
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
+  flex-wrap: wrap;
 }
 
 .col {
@@ -239,4 +240,46 @@ iframe {
   height: 100vh;
   margin-bottom: 24px;
   border: none;
+}
+
+.projectCon {
+  background: white;
+  margin: 24px;
+  box-shadow: 0 3px 5px gray;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition: 75ms;
+}
+
+.projectCon:hover {
+  transform: scale(1.025);
+}
+
+.projectCon:active {
+  transform: scale(1.05);
+}
+ 
+.projectImg {
+  min-width: 348px;
+  width: 15vw;
+}
+
+.projectHeading {
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.skills {
+  height: 100px;
+  padding: 10px 0;
+  background: white;
+  max-width: 1268px;
+  min-width: 348px;
+  width: 50vw;
+  box-shadow: 0 3px 5px gray;
 }
