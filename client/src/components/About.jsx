@@ -66,12 +66,14 @@ export default function About(props) {
                 <div className='col'>
                     <div className='skills'>
                         <div className='sectionTitle'>Current</div>
+                        <div className='line'></div>
                         <ul>
                             {continousLearning.current.map(el => <li>{el}</li>)}
                         </ul>
                         <div className='sectionTitle'>
                             <span>Completed - Total of {continousLearning.completed.length} courses.</span>
                         </div>
+                            <div className='line'></div>
                         <div className='scrollable'>
                             <ul>
                                 {continousLearning.completed.map(el => <li>{el}</li>)}
@@ -117,6 +119,8 @@ export default function About(props) {
                     <div className='sectionTitle'>
                         About me
                     </div>
+                    <div className='line'></div>
+
                     <p>
                         Hello, I'm Maxim Shilo, a fervent full stack developer based in the vibrant Tel Aviv district of Israel. At 25 years old, I stand at the intersection of technology and creativity, dedicated to weaving the art and science of computer science into every project I undertake.
                     </p>
