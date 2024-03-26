@@ -14,6 +14,11 @@ export default function About(props) {
     const displaySkills = () => {
         return (
                 <div className='skills'>
+                    {
+                        skills.map((arr, i) => {
+                            
+                        })
+                    }
                 </div>
         )
     }

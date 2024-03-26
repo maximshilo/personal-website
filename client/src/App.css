@@ -155,16 +155,21 @@ button {
 .con {
   max-width: 1268px;
   min-width: 348px;
-  width: 50vw;
+  width: 70vw;
 }
 
-.row {
+.row,
+.navRow {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
   flex-wrap: wrap;
+}
+
+.navRow {
+  flex-wrap: nowrap;
 }
 
 .col {

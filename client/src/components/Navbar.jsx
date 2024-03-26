@@ -10,7 +10,7 @@ export default function Navbar (props) {
     }
     return (
         <div className='con'>
-            <div className='row'>
+            <div className='navRow'>
                 { displayLandingButton() }
                 <button onClick={() => { navigate('/about') }} className='landingButton'>About</button>
                 <button onClick={() => { navigate('/portfolio') }} className='landingButton'>Portfolio</button>
