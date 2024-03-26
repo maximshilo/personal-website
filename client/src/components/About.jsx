@@ -182,6 +182,12 @@ export default function About(props) {
                     </div>
 
                     <div className='row'>
+                        <span className='mainHeading'>
+                            Continuous Learning
+                        </span>
+                    </div>
+
+                    <div className='row'>
                         {displayContinousLearning()}
                     </div>
 
