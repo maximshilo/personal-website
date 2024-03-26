@@ -214,7 +214,7 @@ button {
 
 .landingButton {
   margin: 24px 12px;
-  font-size: 20px;
+  font-size: 16px;
   border: none;
   padding: 12px 9px;
   border-radius: 6px;
@@ -280,11 +280,28 @@ iframe {
 }
 
 .skills {
-  height: 100px;
-  padding: 10px 0;
+  padding: 0 0;
   background: white;
   max-width: 1268px;
-  min-width: 348px;
+  min-width: 360px;
   width: 50vw;
   box-shadow: 0 3px 5px gray;
+  margin-bottom: 48px;
+}
+
+.sectionTitle {
+  font-weight: bold;
+  align-self: stretch;
+  padding: 6px 24px;
+  background: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(245, 250, 255));
+}
+
+.line {
+  align-self: stretch;
+  height: 0.75px;
+  background: linear-gradient(to right, black 25%, white 75%);
+}
+
+p {
+  padding: 6px;
 }
