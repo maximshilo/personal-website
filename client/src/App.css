@@ -300,7 +300,7 @@ iframe {
 
 .line {
   align-self: stretch;
-  height: 0.75px;
+  height: 1px;
   background: linear-gradient(to right, black 25%, white 75%);
 }
 
