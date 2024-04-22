@@ -13,8 +13,11 @@ export default function About(props) {
     ]
 
     const continousLearning = {
-        current: [`'Learn Vue.js' course @ Codecademy`],
-        completed: [`'Learn Python 3' course @ Codecademy`]
+        current: [`'Complete Guide to C Programming Foundations' by Mr. Dan Gookin @ LinkedIn Learning`],
+        completed: [
+            `'Generative AI for Product Managers' by Dr. Marily Nika  @ LinkedIn Learning`,
+            `'Managing Your Time' by Todd Dewett Ph.D  @ LinkedIn Learning`,
+            `'Learn Python 3' course @ Codecademy`]
     }
 
     const education = [
