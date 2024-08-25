@@ -9,12 +9,13 @@ export default function About(props) {
         ['Back-end', 'Node.js', 'Express'],
         ['Databases', 'MongoDB'],
         ['Tools', 'Git', 'Heroku'],
-        ['Languages', 'JavaScript', 'C#', 'Python'],
+        ['Languages', 'JavaScript', 'C', 'C#', 'Python'],
     ]
 
     const continousLearning = {
-        current: [`'Complete Guide to C Programming Foundations' by Mr. Dan Gookin @ LinkedIn Learning`],
+        current: [`'Interactive Animations with CSS and JavaScript' by Mr. W. Scott Means @ LinkedIn Learning`],
         completed: [
+            `'Complete Guide to C Programming Foundations' by Mr. Dan Gookin @ LinkedIn Learning`,
             `'Generative AI for Product Managers' by Dr. Marily Nika  @ LinkedIn Learning`,
             `'Managing Your Time' by Todd Dewett Ph.D  @ LinkedIn Learning`,
             `'Learn Python 3' course @ Codecademy`]
