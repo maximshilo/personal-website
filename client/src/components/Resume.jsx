@@ -24,7 +24,7 @@ export default function Resume(props) {
                     <div className='row'>
                         <Navbar />
                     </div>
-
+                    {/* hello */}
                     <div className='row'>
                         <span className='displayHeading'>
                             Resume
