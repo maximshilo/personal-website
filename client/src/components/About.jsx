@@ -27,6 +27,18 @@ export default function About(props) {
         ['Highschool Diploma', '2014 - 2018', 'With coursework in Computer Science, Mathematics, and Physics.']
     ]
 
+    const experience = [
+        [
+            'Full Stack Developer - LS Technology',
+            'Collaborated on a production-stage application by fixing bugs and implementing new features, gaining hands-on experience in the full software development lifecycle alongside experienced developers.',
+            '2024 - Present', 
+            'Petah Tikva, Israel.', 
+            'Implemented new features and real-time customer-requested changes.',
+            'Conducted quality assurance on new features to ensure error-free production deployment.',
+            'Identified and resolved bugs, deploying corrected code to production.'
+        ]
+    ]
+
     const biography = String.raw`Hello, I'm Maxim Shilo, a fervent full stack developer based in the vibrant Tel Aviv district of Israel. At 25 years old, I stand at the intersection of technology and creativity, dedicated to weaving the art and science of computer science into every project I undertake.
 
     My journey into the world of technology began in childhood, sparked by a simple yet transformative gift from my grandmother—a family PC. This early encounter with computing opened a gateway to a world where logic meets imagination, leading me down a path of endless fascination with technology and, specifically, computer science.
@@ -116,6 +128,35 @@ export default function About(props) {
         )
     }
 
+    const displayExperience = () => {
+        return (
+            <div className='skills'>
+                {
+                    experience.map((arr) => {
+                        return (
+                            <div className='col'>
+                                <div className='sectionTitle'>{arr[0]}</div>
+                                <div className='sectionMainContent'>{arr[1]}</div>
+                                <div className='line'></div>
+                                <ul>
+                                    {
+                                        arr.map((el, id) => {
+                                            if (id > 1) {
+                                                return (
+                                                    <li>{el}</li>
+                                                )
+                                            }
+                                        })
+                                    }
+                                </ul>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        )
+    }
+
     const displayBiography = () => {
         return (
             <div className='skills'>
@@ -177,6 +218,16 @@ export default function About(props) {
 
                     <div className='row'>
                         {displaySkills()}
+                    </div>
+
+                    <div className='row'>
+                        <span className='mainHeading'>
+                            Professional Experience
+                        </span>
+                    </div>
+
+                    <div className='row'>
+                        {displayExperience()}
                     </div>
 
                     <div className='row'>
