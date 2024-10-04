@@ -21,8 +21,8 @@ export default function Contact(props) {
                     </a>
                 </span>
                 <span>Personal Website :
-                    <a href={'https://perswebsite-ca6107f05db5.herokuapp.com/'}>
-                        https://perswebsite-ca6107f05db5.herokuapp.com/
+                    <a href={'https://dev.maximshilo.com/'}>
+                        https://dev.maximshilo.com/
                     </a>
                 </span>
                 </div>
